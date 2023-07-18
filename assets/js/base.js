@@ -48,7 +48,6 @@ let navbarLeft = document.querySelector('.navbar__left')
 let menu = document.querySelector('.sidebar')
 let sidebarLogo = document.querySelector('.sidebar__logo')
 let sidebarDayDate = document.querySelector('.sidebar__day__date')
-let contentRight = document.querySelector('.content__right')
 if (menuBtn) {
     menuBtn.addEventListener('click', () => {
         if (!navbarLeft.classList.contains('active')) {
@@ -56,23 +55,28 @@ if (menuBtn) {
             menu.classList.add('active')
             sidebarLogo.classList.add('active')
             sidebarDayDate.classList.add('active')
-            contentRight.classList.add('active')
+            contentRight.classList.add('active') 
         }
         else {
             navbarLeft.classList.remove('active')
             menu.classList.remove('active')
             sidebarLogo.classList.remove('active')
             sidebarDayDate.classList.remove('active')
-            contentRight.classList.remove('active')
+            contentRight.classList.remove('active') 
         }
     })
 }
+
 /*==========================>  SIDEBAR MENU LOGO ACTIVE <================================*/
 const sidebarListItem = document.querySelectorAll('.sidebar__list__item')
 
 if (sidebarListItem) {
     sidebarListItem.forEach(item => {
+        
         item.addEventListener('click', () => {
+           /*  let menuActive = item.classList.add('active')
+            console.log(menuActive); */
+            
             const sidebarListItemActive = document.querySelector('.sidebar__list__item.active')
             const sidebarMenuLogoActive = document.querySelector('.sidebar__menu__logo.active')
             const sidebarMenuLogo = item.querySelector('.sidebar__menu__logo')
@@ -82,20 +86,42 @@ if (sidebarListItem) {
             } else {
                 item.classList.remove('active')
                 sidebarListItemActive.classList.add('active')
+               
             } 
-            
-
-                if(!sidebarMenuLogo.classList.contains('active') ){
+            if(!sidebarMenuLogo.classList.contains('active') ){
                     sidebarMenuLogo.classList.add('active')
                     sidebarMenuLogoActive.classList.remove('active')
-                }else if(sidebarMenuLogo.classList.contains('active') ){
+            }else if(sidebarMenuLogo.classList.contains('active') ){
                     sidebarMenuLogo.classList.remove('active')
-                    sidebarMenuLogoActive.classList.add('active')
+                    sidebarMenuLogoActive.classList.add('active')     
+            }
+            let menuActive = document.querySelector('.sidebar__list__item.active')
+
+                if(menuActive){
+                    const mainListItem = document.querySelectorAll('.main_content_list_item')
+                    mainListItem.forEach(item =>{
+                        let menuActiveId = item.id
+                        console.log(menuActiveId);
+                        if(menuActive.classList.contains(menuActiveId)){
+                            item.classList.add('active')
+                            item.style.display='block'
+                            console.log(item);
+                        }else{
+                            item.classList.remove('active')
+                            item.style.display='none'
+                            console.log(item);
+                        }
+                    })
                 }
         })
     })
 }
+/* const mainListItem = document.querySelectorAll('.main_content_list_item')
+mainListItem.forEach(item =>{
+    console.log(item);
 
+   let mainListItemActive = mainListItem.filter(posts => posts.contains(`${menuActive}`) && posts.contains('active'))
+}) */
 /*==================================>  DATE AND HOURS <==============================================*/
 /*=========================>  DATE  <=========================*/
 let date = new Date()
@@ -144,6 +170,6 @@ if(overlay){
             overlay.classList.remove('active')
         }
 })}
- main 
+
 
 
