@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <span class="overlay"></span>
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__left">
+                <aside class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__top__logo">
+                            <div class="sidebar__logo">
+                                <a href=""><img src="" alt="">Cshop</a>
+                            </div>
+                        </div>
+                        <div class="sidebar__top__menu">
+                            <ul class="sidebar__menu__list">
+                                <li class="sidebar__list__item active">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo active ">
+                                            <span class="mdi mdi-view-grid-outline"></span>
+                                        </div>
+                                        <p class="menu__name">Dashbord</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item ">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-tag"></span>
+                                        </div>
+                                        <p class="menu__name">Stock</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Caisse</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-account-group"></span>
+                                        </div>
+                                        <p class="menu__name">Gestion d'utilisateur</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-golf-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Requête</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <div class="sidebar__day__date">
+                            <p class="date">15 juillet 2023</p>
+                            <p class="hour">23:00:00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="content__right">
+                <header>
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="navbar__left">
+                                <span></span>
+                            </div>
+                            <div class="navbar__right">
+                                <div class="navbar__right__notification__icone">
+                                    <span class="mdi mdi-bell"></span>
+                                </div>
+                                <span class="navbar__right__seperator"></span>
+                                <div class="user">
+                                    <a href="#">
+                                        <img src="assets/imgs/users/olivier.jpg" alt="">
+                                        <p>DOSSOU Zénaîde</p>
+                                    </a>
+                                    <div class="deconnexion">
+                                        <div class="deconnexion__modal">
+                                            <span class="mdi mdi-logout"></span>
+                                            <p>Déconnexion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+
+                    <div class="container">
+
+                        <!-- le modal pour l'ajout des utilisateurs -->
+                        <session class="main__modal">
+                            <div class="main__modal__content">
+                                <div class="main__modal__form">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="title">Utilisateur</div>
+                                    <form action="">
+                                        <div class="content__form">
+                                            <input type="text" id="name" placeholder="Nom">
+                                        </div>
+                                        <div class="content__form">
+                                            <input type="text" id="lastname" placeholder="Prénom">
+                                        </div>
+                                        <div class="content__form">
+                                            <input type="text" id="pseudo" placeholder="Pseudo">
+                                        </div>
+                                        <div class="content__form">
+                                            <input type="email" id="mail" placeholder="Email">
+                                        </div>
+                                        <div class="content__form">
+                                            <input type="number" id="number" placeholder="Telephone">
+                                        </div>
+                                        <div class="content__form__role">
+                                            <span class="role">Rôle :</span>
+                                            <select name="" id="role">
+                                                <option value=""></option>
+                                                <option value="Administrateur">Administrateur</option>
+                                                <option value="Superviseur">Superviseur</option>
+                                                <option value="Caissier">Caissier</option>
+                                            </select>
+                                        </div>
+                                        <div class="approuve">
+                                            <button type="reset" id="reset">&#8635; Reset</button>
+                                            <button type="submit" id="submit">+ Add</button>
+                                            <button type="submit" id="update">Editer</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </session>
+
+                        <!-- Titre de la page -->
+                        <session class="title">
+                            <div class="title__content">
+                                <div class="title__content__users">
+                                    <h1>
+                                        Utilisateurs <span><a href="#" class="addusers">
+                                                Ajouter Utilisateur
+                                            </a></span>
+                                    </h1>
+                                </div>
+                                <div class="title__content__search">
+                                    <div class="title__content__search__category">
+                                        <h1 class="title__content__search__category__all">Tous <span>()</span></h1>
+                                        <p class="title__content__search__category__result">Administrateur
+                                            <span>()</span></p>
+                                    </div>
+                                    <div class="title__content__search__input">
+                                        <input type="text">
+                                        <div class="title__content__search__input__button">
+                                            <a href="#">Rechercher des utilisateurs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title__content__search__action">
+                                    <div class="title__content__search__action__select">
+                                        <select name="action" id="">
+                                            <option value="Changer de rôle pour un utilisateur">Changer de rôle pour un
+                                                utilisateur
+                                            </option>
+                                            <option value="Administrateur">Administrateur</option>
+                                            <option value="Superviseur">Superviseur</option>
+                                            <option value="Caissier">Caissier</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="title__content__search__action__change">Changement</a>
+                                </div>
+                            </div>
+                        </session>
+
+                        <!-- TABLE GENERAL STYLE -->
+                        <div class="content__table">
+                            <!-- <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>N/serie</th>
+                                        <th>Date Creation</th>
+                                        <th>Nom & Prenoms</th>
+                                        <th>Pseudo</th>
+                                        <th>Role</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>1</td>
+                                        <td>14/07/2023</td>
+                                        <td>GNANHOUNGBE ARSEN</td>
+                                        <td>Arso991</td>
+                                        <td>Admin</td>
+                                        <td>Active</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>1</td>
+                                        <td>14/07/2023</td>
+                                        <td>GNANHOUNGBE ARSEN</td>
+                                        <td>Arso991</td>
+                                        <td>Admin</td>
+                                        <td>Active</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>1</td>
+                                        <td>14/07/2023</td>
+                                        <td>GNANHOUNGBE ARSEN</td>
+                                        <td>Arso991</td>
+                                        <td>Admin</td>
+                                        <td>Active</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+
+                                </tfoot>
+                            </table>  -->
+                        </div>
+
+                    </div>
+
+                </main>
+                <footer>
+                    <div class="container">
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type = 'module' src="assets/js/connexion.js"></script>
+    <script type = 'module' src="assets/js/dashbord.js"></script>
+    <script type = 'module' src="assets/js/stocks-sales.js"></script>
+    <script type = 'module' src="assets/js/user.js"></script>
+    <script type = 'module' src="assets/js/base.js"></script>
+    <script type = 'module' src="assets/js/mymodules.js" ></script>
+</body>
+
+</html>
+

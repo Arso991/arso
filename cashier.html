@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__left">
+                <aside class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__top__logo">
+                            <div class="sidebar__logo">
+                                <a href=""><img src="" alt="Cshop"></a>
+                            </div>
+                        </div>
+                        <div class="sidebar__top__menu">
+                            <ul class="sidebar__menu__list">
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <span class="mdi mdi-view-grid-outline"></span>
+                                        <p>Dashbord</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <span class="mdi mdi-tag"></span>
+                                        <p>Stock</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <span class="mdi mdi-cart"></span>
+                                        <p>Caisse</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <span class="mdi mdi-account-group"></span>
+                                        <p>Gestion d'utilisateur</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <span class="mdi mdi-golf-cart"></span>
+                                        <p>Requête</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <div class="sidebar__day__date">
+                            <p>15 juillet 2023</p>
+                            <p>23:00:00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="content__right">
+                <header>
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="navbar__left">
+                                <span></span>
+                            </div>
+                            <div class="navbar__right">
+                                <span class="mdi mdi-bell"></span>
+                                <div class="user">
+                                    <a href="#">
+                                        <img src="assets/imgs/users/olivier.jpg" alt="">
+                                        <p>DOSSOU Zénaîde</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="container">
+
+                        <button class="btn btn-outline-primary" id="form-add">Ajouter</button>
+                        <form action="javascript:void(0);" id="form" class="mt-4">
+                        <div class="form-group">
+                            <label for="Produit">Nom Produit</label>
+                            <input type="text" name="title" id="produit" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="categorie">Catégorie</label>
+                            <input type="text" name="" id="categorie" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="sku">SKU</label>
+                            <input type="text" name="year" id="sku" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="sku">Quantité</label>
+                            <input type="number" name="number" id="quantite" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantité">Prix</label>
+                            <input type="number" name="number" id="prix" class="form-control"/>
+                        </div>
+                        <input type="hidden" id="hidden"/>
+                        <button class="btn btn-xs btn-primary" id="form-save">Enregistrer</button>
+                        <button class="btn btn-xs" id="form-cancel">Annuler</button>
+                        </form>
+
+                        <!-- <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <form action="">
+                                <label for="">Nom du client:</label>
+                                <input type="text" id="texte" name="text">
+                                <label for="">Sélectionnez un produit:</label>
+                                <input type="text" id="product" name="product">
+                                <label for="">Quantité:</label>
+                                <input type="number" id="quantity" name="quantity">
+                                <label for="">Prix:</label>
+                                <input type="number" id="price" name="price">
+                                <input type="submit" value="Ajouter" id="submit">    
+                            </form>
+                        </div>
+                        </div> -->
+
+
+                        <h1>Nos Produits</h1>
+                        <input type="search" class="form-control" placeholder="Rechercher par titre" />  
+                        <!-- TABLE GENERAL STYLE -->
+                        <div class="content_table">
+                            <table class="table">
+                                <tr>
+                                    <!-- <th>
+                                        <input type="checkbox">
+                                    </th> -->
+                                    <!-- <th>ID</th> -->
+                                    <th>ID</th>
+                                    <th>Clients</th>
+                                    <th>Nom Produit</th>
+                                    <th>Code</th>
+                                    <th>Quantité</th>
+                                    <th>Prix</th>
+                                    <th>Actions</th>
+                                    <!-- <th>stauts</th> -->
+                                </tr>
+                                <tbody class="tb">
+                                    <!-- <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>1</td>
+                                        <td>
+                                            <span class="table__picture">
+                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                            </span>
+                                        </td>
+                                        <td>Banane</td>
+                                        <td>Fruit</td>
+                                        <td>boff</td>
+                                        <td>20</td>
+                                        <td>200f</td>
+                                        <td>
+                                            <button class="btn--active">active</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>2</td>
+                                        <td>
+                                            <span class="table__picture">
+                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                            </span>
+                                        </td>
+                                        <td>Banane</td>
+                                        <td>Fruit</td>
+                                        <td>boff</td>
+                                        <td>20</td>
+                                        <td>200f</td>
+                                        <td>
+                                            <button class="btn--out-of-stock">active</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>3</td>
+                                        <td>
+                                            <span class="table__picture">
+                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                            </span>
+                                        </td>
+                                        <td>banane</td>
+                                        <td>Fruit</td>
+                                        <td>boff</td>
+                                        <td>20</td>
+                                        <td>200f</td>
+                                        <td>
+                                            <button class="btn--active">active</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>4</td>
+                                        <td>
+                                            <span class="table__picture">
+                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                            </span>
+                                        </td>
+                                        <td>Banane</td>
+                                        <td>Fruit</td>
+                                        <td>boff</td>
+                                        <td>20</td>
+                                        <td>200f</td>
+                                        <td>
+                                            <button class="btn--out-of-stock">active</button>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                </main>
+                <footer>
+                    <div class="container">
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="assets/js/connexion.js"></script>
+    <script type="module" src="assets/js/dashbord.js"></script>
+    <script type="module" src="assets/js/stocks-sales.js"></script>
+    <script type="module" src="assets/js/user.js"></script>
+    <script type="module" src="assets/js/base.js"></script>
+    <script type="module" src="assets/js/mymodules.js"></script>
+</body>
+
+</html>
+

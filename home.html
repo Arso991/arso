@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <span class="overlay"></span>
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__left">
+                <aside class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__top__logo">
+                            <div class="sidebar__logo">
+                                <a href=""><img src="" alt="">Cshop</a>
+                            </div>
+                        </div>
+                        <div class="sidebar__top__menu">
+                            <ul class="sidebar__menu__list">
+                                <li class="sidebar__list__item active">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo active ">
+                                            <span class="mdi mdi-view-grid-outline"></span>
+                                        </div>
+                                        <p class="menu__name">Dashbord</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item ">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-tag"></span>
+                                        </div>
+                                        <p class="menu__name">Stock</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Caisse</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-account-group"></span>
+                                        </div>
+                                        <p class="menu__name">Gestion d'utilisateur</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-golf-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Requête</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <div class="sidebar__day__date">
+                            <p class="date">15 juillet 2023</p>
+                            <p class="hour">23:00:00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="content__right">
+                <header>
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="navbar__left">
+                                <span></span>
+                            </div>
+                            <div class="navbar__right">
+                                <div class="navbar__right__notification__icone">
+                                    <span class="mdi mdi-bell"></span>
+                                </div>
+                                <span class="navbar__right__seperator"></span>
+                                <div class="user">
+                                    <a href="#">
+                                        <img src="assets/imgs/users/olivier.jpg" alt="">
+                                        <p>DOSSOU Zénaîde</p>
+                                    </a>
+                                    <div class="deconnexion">
+                                        <div class="deconnexion__modal">
+                                            <span class="mdi mdi-logout"></span>
+                                            <p>Déconnexion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="main_content">
+                        <ul class="main_content_list">
+                            <li class="main_content_list_item">
+                                <session class="dashboard">
+                                    <div class="container">
+                                        <div class="container">
+                                            <div class="dashbord__main__content">
+                                                <div class="dashbord_title">
+                                                    <h2>Dashbord</h2>
+                                                </div>
+                                                <div class="dashbord__card__content">
+                                                    <div class="card__box">
+                                                        <div class="card__icone">
+                                                            <span class="mdi mdi-chart-line"></span>
+                                                        </div>
+                                                        <div class="card__number">
+                                                            <h3 id="seles_total"></h3>
+                                                            <p>Total des ventes</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__box">
+                                                        <div class="card__icone">
+                                                            <span class="mdi mdi-currency-usd"></span>
+                                                        </div>
+                                                        <div class="card__number">
+                                                            <h3 id="cost_total"></h3>
+                                                            <p>Coût total</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card__box">
+                                                        <div class="card__icone">
+                                                            <span class="mdi mdi-cube-outline"></span>
+                                                        </div>
+                                                        <div class="card__number">
+                                                            <h3 id="product_seles"></h3>
+                                                            <p>Commandes Totales</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__box">
+                                                        <div class="card__icone">
+                                                            <span class="mdi mdi-bitcoin"></span>
+                                                        </div>
+                                                        <div class="card__number">
+                                                            <h3 id="available_stock"></h3>
+                                                            <p>Stock disponible</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="dashbord__date_form">
+                                                    <form action="" method="post">
+                                                        <select name="" id="bilan_select">
+                                                            <option value="last 7 days">last 7 days</option>
+                                                            <option value="last 3 days">last 3 days</option>
+                                                            <option value="last years">last years</option>
+                                                            <option value="last 6 month">last 6 month</option>
+                                                            <option value="last 3 month">last 3 month</option>
+                                                            <option value="last month">last month</option>
+                                                        </select>
+                                                        <input type="date" id="startDate" name="startDate">
+                                                        <input type="date" id="endDate" name="endDate">
+                                                    </form>
+                                                </div>
+                                                <div class="dashbord__bilan__content">
+                                                    <div class="bilan__box">
+                                                        <div class="revenu_vs_cost">
+                                                            <h3>Revenus vs coûts</h3>
+                                                        </div>
+                                                        <div class="content__bilan__graphes">
+                                                            <canvas id="barCanvas" aria-label="chart"
+                                                                role="img"></canvas>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bilan__box">
+                                                        <div class="revenu_vs_cost">
+                                                            <h3>Récapitulatif des achats</h3>
+                                                        </div>
+                                                        <div class="content__bilan__graphes">
+                                                            <canvas id="lineCanvas" aria-label="chart"
+                                                                role="img"></canvas>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bilan__box">
+                                                        <div class="revenu_vs_cost">
+                                                            <h3>Nombre d'unités vendues</h3>
+                                                        </div>
+                                                        <div class="content__bilan__graphes">
+                                                            <canvas id="myChart" aria-label="chart" role="img"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </session>
+                            </li>
+                            <li class="main_content_list_item">
+                                <session class="cashier">
+                                    <div class="container">
+                                        <button class="btn btn-outline-primary" id="form-add">Ajouter</button>
+                                        <form action="javascript:void(0);" id="form" class="mt-4">
+                                            <div class="form-group">
+                                                <label for="Produit">Nom Produit</label>
+                                                <input type="text" name="title" id="produit" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="categorie">Catégorie</label>
+                                                <input type="text" name="" id="categorie" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="sku">SKU</label>
+                                                <input type="text" name="year" id="sku" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="sku">Quantité</label>
+                                                <input type="number" name="number" id="quantite" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="quantité">Prix</label>
+                                                <input type="number" name="number" id="prix" class="form-control" />
+                                            </div>
+                                            <input type="hidden" id="hidden" />
+                                            <button class="btn btn-xs btn-primary" id="form-save">Enregistrer</button>
+                                            <button class="btn btn-xs" id="form-cancel">Annuler</button>
+                                        </form>
+
+                                        <!-- <div id="modal" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close">&times;</span>
+                                            <form action="">
+                                                <label for="">Nom du client:</label>
+                                                <input type="text" id="texte" name="text">
+                                                <label for="">Sélectionnez un produit:</label>
+                                                <input type="text" id="product" name="product">
+                                                <label for="">Quantité:</label>
+                                                <input type="number" id="quantity" name="quantity">
+                                                <label for="">Prix:</label>
+                                                <input type="number" id="price" name="price">
+                                                <input type="submit" value="Ajouter" id="submit">    
+                                            </form>
+                                        </div>
+                                        </div> -->
+
+
+                                        <h1>Nos Produits</h1>
+                                        <input type="search" class="form-control" placeholder="Rechercher par titre" />
+                                        <!-- TABLE GENERAL STYLE -->
+                                        <div class="content_table">
+                                            <table class="table">
+                                                <tr>
+                                                    <!-- <th>
+                                                        <input type="checkbox">
+                                                    </th> -->
+                                                    <!-- <th>ID</th> -->
+                                                    <th>ID</th>
+                                                    <th>Clients</th>
+                                                    <th>Nom Produit</th>
+                                                    <th>Code</th>
+                                                    <th>Quantité</th>
+                                                    <th>Prix</th>
+                                                    <th>Actions</th>
+                                                    <!-- <th>stauts</th> -->
+                                                </tr>
+                                                <tbody class="tb">
+                                                    <!-- <tr>
+                                                        <td>
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <span class="table__picture">
+                                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                                            </span>
+                                                        </td>
+                                                        <td>Banane</td>
+                                                        <td>Fruit</td>
+                                                        <td>boff</td>
+                                                        <td>20</td>
+                                                        <td>200f</td>
+                                                        <td>
+                                                            <button class="btn--active">active</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td>2</td>
+                                                        <td>
+                                                            <span class="table__picture">
+                                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                                            </span>
+                                                        </td>
+                                                        <td>Banane</td>
+                                                        <td>Fruit</td>
+                                                        <td>boff</td>
+                                                        <td>20</td>
+                                                        <td>200f</td>
+                                                        <td>
+                                                            <button class="btn--out-of-stock">active</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td>
+                                                            <span class="table__picture">
+                                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                                            </span>
+                                                        </td>
+                                                        <td>banane</td>
+                                                        <td>Fruit</td>
+                                                        <td>boff</td>
+                                                        <td>20</td>
+                                                        <td>200f</td>
+                                                        <td>
+                                                            <button class="btn--active">active</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox">
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            <span class="table__picture">
+                                                                <img src="assets/imgs/products/sac-saint-lorain.png" alt="">
+                                                            </span>
+                                                        </td>
+                                                        <td>Banane</td>
+                                                        <td>Fruit</td>
+                                                        <td>boff</td>
+                                                        <td>20</td>
+                                                        <td>200f</td>
+                                                        <td>
+                                                            <button class="btn--out-of-stock">active</button>
+                                                        </td>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </session>
+                            </li>
+                            <li class="main_content_list_item">
+                                <div class="container">
+
+                                    <!-- le modal pour l'ajout des utilisateurs -->
+                                    <session class="main__modal">
+                                        <div class="main__modal__content">
+                                            <div class="main__modal__form">
+                                                <span class="closeBtn">&times;</span>
+                                                <div class="title">Utilisateur</div>
+                                                <form action="">
+                                                    <div class="content__form">
+                                                        <input type="text" id="name" placeholder="Nom">
+                                                    </div>
+                                                    <div class="content__form">
+                                                        <input type="text" id="lastname" placeholder="Prénom">
+                                                    </div>
+                                                    <div class="content__form">
+                                                        <input type="text" id="pseudo" placeholder="Pseudo">
+                                                    </div>
+                                                    <div class="content__form">
+                                                        <input type="email" id="mail" placeholder="Email">
+                                                    </div>
+                                                    <div class="content__form">
+                                                        <input type="number" id="number" placeholder="Telephone">
+                                                    </div>
+                                                    <div class="content__form__role">
+                                                        <span class="role">Rôle :</span>
+                                                        <select name="" id="role">
+                                                            <option value=""></option>
+                                                            <option value="Administrateur">Administrateur</option>
+                                                            <option value="Superviseur">Superviseur</option>
+                                                            <option value="Caissier">Caissier</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="approuve">
+                                                        <button type="reset" id="reset">&#8635; Reset</button>
+                                                        <button type="submit" id="submit">+ Add</button>
+                                                        <button type="submit" id="update">Editer</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </session>
+            
+                                    <!-- Titre de la page -->
+                                    <session class="title">
+                                        <div class="title__content">
+                                            <div class="title__content__users">
+                                                <h1>
+                                                    Utilisateurs <span><a href="#" class="addusers">
+                                                            Ajouter Utilisateur
+                                                        </a></span>
+                                                </h1>
+                                            </div>
+                                            <div class="title__content__search">
+                                                <div class="title__content__search__category">
+                                                    <h1 class="title__content__search__category__all">Tous <span>()</span></h1>
+                                                    <p class="title__content__search__category__result">Administrateur
+                                                        <span>()</span></p>
+                                                </div>
+                                                <div class="title__content__search__input">
+                                                    <input type="text">
+                                                    <div class="title__content__search__input__button">
+                                                        <a href="#">Rechercher des utilisateurs</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title__content__search__action">
+                                                <div class="title__content__search__action__select">
+                                                    <select name="action" id="">
+                                                        <option value="Changer de rôle pour un utilisateur">Changer de rôle pour un
+                                                            utilisateur
+                                                        </option>
+                                                        <option value="Administrateur">Administrateur</option>
+                                                        <option value="Superviseur">Superviseur</option>
+                                                        <option value="Caissier">Caissier</option>
+                                                    </select>
+                                                </div>
+                                                <a href="#" class="title__content__search__action__change">Changement</a>
+                                            </div>
+                                        </div>
+                                    </session>
+            
+                                    <!-- TABLE GENERAL STYLE -->
+                                    <div class="content__table">
+                                        <!-- <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>N/serie</th>
+                                                    <th>Date Creation</th>
+                                                    <th>Nom & Prenoms</th>
+                                                    <th>Pseudo</th>
+                                                    <th>Role</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>14/07/2023</td>
+                                                    <td>GNANHOUNGBE ARSEN</td>
+                                                    <td>Arso991</td>
+                                                    <td>Admin</td>
+                                                    <td>Active</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>14/07/2023</td>
+                                                    <td>GNANHOUNGBE ARSEN</td>
+                                                    <td>Arso991</td>
+                                                    <td>Admin</td>
+                                                    <td>Active</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>14/07/2023</td>
+                                                    <td>GNANHOUNGBE ARSEN</td>
+                                                    <td>Arso991</td>
+                                                    <td>Admin</td>
+                                                    <td>Active</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+            
+                                            </tfoot>
+                                        </table>  -->
+                                    </div>
+            
+                                </div>
+                            </li>
+                            <li class="main_content_list_item">
+                                <div class="container">
+        
+                                    <!-- FORMULAIRE COMMANDE FOURNISSEUR -->
+        
+                                    <div class="main__modal">
+                                        <div class="main__modal__content">
+                                            <span class="closeBtn">&times;</span>
+                                            <div class="main__modal__form">
+                                                <div class="main__modal__form__title">Requete</div>
+                                                <div class="main__modal__form__content">
+                                                    <div class="main__modal__form__left">
+                                                        <form action="">
+                                                            <div class="input_box">
+                                                                <span class="name_request">Fournisseur</span>
+                                                                <input type="text" id="name_supplier">
+                                                            </div>
+                                                            <div class="input_box">
+                                                                <span class="name_request">Délai de livraison </span>
+                                                                <input type="date" id="delivery_time_product">
+                                                            </div>
+                                                            <div class="input_box">
+                                                                <span class="name_request">Référence</span>
+                                                                <input type="text" id="reference_product">
+                                                            </div>
+                                                            <div class="input_box">
+                                                                <span class="name_request">Désignations</span>
+                                                                <input type="text" id="reference_product">
+                                                            </div>
+                                                            <div class="input_box">
+                                                                <span class="name_request">Prix Unitaire</span>
+                                                                <input type="number" id="price_product">
+                                                            </div>
+                                                            <div class="input_box">
+                                                                <span class="name_request">Quantité</span>
+                                                                <input type="number" id="quantity_request">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="main__modal__form__right">
+                                                        <div class="sommary">
+                                                            <div class="sommary__title">
+                                                                Sommaire
+                                                            </div>
+                                                            <div class="sommary__account_total">
+                                                                <p>Total HT : <span class="account_calculation"> 100 000
+                                                                        FCFA</span> </p>
+                                                                <p>Taxe : <span class="account_calculation"> 18%</span></p>
+                                                                <p>Total TTC : <span class="account_calculation">118 000
+                                                                        FCFA</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="request_approuve">
+                                                            <a href="#" id="cancel_request">Annuler</a>
+                                                            <a href="#" id="validate_request">Valider</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- Titre de la page -->
+                                    <div class="title">
+                                        <div class="title__content">
+                                            <div class="title__content__users">
+                                                <h1>Requetes de Nouveau Stock
+                                                    <span>
+                                                        <a href="#" class=" btn addrequest" id="request__add">
+                                                            Ajouter une requete
+                                                        </a>
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="title__content__search">
+                                                <div class="title__content__search__category">
+                                                    <h1 class="title__content__search__category__all">Tous
+                                                        <span>()</span>
+                                                    </h1>
+                                                    <p class="title__content__search__category__result">En cours
+                                                        <span>()</span>
+                                                    </p>
+                                                </div>
+                                                <div class="title__content__search__input">
+                                                    <input type="text">
+                                                    <div class="title__content__search__input__button">
+                                                        <a href="#" class="btn">Rechercher de Requetes</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title__content__search__action">
+                                                <div class="title__content__search__action__select">
+                                                    <select name="action" id="">
+                                                        <option value="Changer de rôle pour un utilisateur">Changer le status de
+                                                            requete
+                                                        </option>
+                                                        <option value="Administrateur">En cours</option>
+                                                        <option value="Superviseur">Livrer</option>
+                                                        <option value="Caissier">En retard</option>
+                                                    </select>
+                                                </div>
+                                                <a href="#" class="title__content__search__action__change btn">Changement</a>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <!-- TABLE GENERAL STYLE -->
+                                    <div class="content__table">
+                                        <table class="table">
+                                            <thead>
+        
+                                                <tr>
+                                                    <th>
+                                                        <input type="checkbox" diseabled>
+                                                    </th>
+                                                    <th>N0/Serie</th>
+                                                    <th>Référence</th>
+                                                    <th>Désignations</th>
+                                                    <th>Prix Unitaire</th>
+                                                    <th>Quantité</th>
+                                                    <th>Total TTC</th>
+                                                    <th>Dates livraison</th>
+                                                    <th>Status</th>
+                                                    <th colspan="3">Action</th>
+                                                </tr>
+        
+                                            </thead>
+                                            <tbody>
+        
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" diseabled>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>AC856624</td>
+                                                    <td>Chaussure Louis Vuiton</td>
+                                                    <td>15000 fcfa</td>
+                                                    <td>2</td>
+                                                    <td>30000 fcfa</td>
+                                                    <td>5/8/2023</td>
+                                                    <td>
+                                                        <select name="" id="">
+                                                            <option value="">En cours</option>
+                                                            <option value="">Livré</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="action" colspan="3">
+        
+                                                        <a href="#" class="edit">
+                                                            <span class="mdi mdi-pencil"></span>
+                                                        </a>
+                                                        <a href="#" class="seemore">
+                                                            Voir +
+                                                        </a>
+                                                        <a href="#" class="delete">
+                                                            <span class="mdi mdi-delete"></span>
+                                                        </a>
+        
+                                                    </td>
+                                                </tr>
+        
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" diseabled>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>AC856624</td>
+                                                    <td>Chaussure Louis Vuiton</td>
+                                                    <td>15000 fcfa</td>
+                                                    <td>2</td>
+                                                    <td>30000 fcfa</td>
+                                                    <td>5/8/2023</td>
+                                                    <td>
+                                                        <select name="" id="">
+                                                            <option value="">En cours</option>
+                                                            <option value="">Livré</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="action" colspan="3">
+        
+                                                        <a href="#" class="edit">
+                                                            <span class="mdi mdi-pencil"></span>
+                                                        </a>
+                                                        <a href="#" class="seemore">
+                                                            Voir +
+                                                        </a>
+                                                        <a href="#" class="delete">
+                                                            <span class="mdi mdi-delete"></span>
+                                                        </a>
+        
+                                                    </td>
+                                                </tr>
+        
+        
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" diseabled>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>AC856624</td>
+                                                    <td>Chaussure Louis Vuiton</td>
+                                                    <td>15000 fcfa</td>
+                                                    <td>2</td>
+                                                    <td>30000 fcfa</td>
+                                                    <td>5/8/2023</td>
+                                                    <td>
+                                                        <select name="" id="">
+                                                            <option value="">En cours</option>
+                                                            <option value="">Livré</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="action" colspan="3">
+        
+                                                        <a href="#" class="edit">
+                                                            <span class="mdi mdi-pencil"></span>
+                                                        </a>
+                                                        <a href="#" class="seemore">
+                                                            Voir +
+                                                        </a>
+                                                        <a href="#" class="delete">
+                                                            <span class="mdi mdi-delete"></span>
+                                                        </a>
+        
+                                                    </td>
+                                                </tr>
+        
+        
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" diseabled>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>AC856624</td>
+                                                    <td>Chaussure Louis Vuiton</td>
+                                                    <td>15000 fcfa</td>
+                                                    <td>2</td>
+                                                    <td>30000 fcfa</td>
+                                                    <td>5/8/2023</td>
+                                                    <td>
+                                                        <select name="" id="">
+                                                            <option value="">En cours</option>
+                                                            <option value="">Livré</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="action" colspan="3">
+        
+                                                        <a href="#" class="edit">
+                                                            <span class="mdi mdi-pencil"></span>
+                                                        </a>
+                                                        <a href="#" class="seemore">
+                                                            Voir +
+                                                        </a>
+                                                        <a href="#" class="delete">
+                                                            <span class="mdi mdi-delete"></span>
+                                                        </a>
+        
+                                                    </td>
+                                                </tr>
+        
+        
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" diseabled>
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>AC856624</td>
+                                                    <td>Chaussure Louis Vuiton</td>
+                                                    <td>15000 fcfa</td>
+                                                    <td>2</td>
+                                                    <td>30000 fcfa</td>
+                                                    <td>5/8/2023</td>
+                                                    <td>
+                                                        <select name="" id="">
+                                                            <option value="">En cours</option>
+                                                            <option value="">Livré</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="action" colspan="3">
+        
+                                                        <a href="#" class="edit">
+                                                            <span class="mdi mdi-pencil"></span>
+                                                        </a>
+                                                        <a href="#" class="seemore">
+                                                            Voir +
+                                                        </a>
+                                                        <a href="#" class="delete">
+                                                            <span class="mdi mdi-delete"></span>
+                                                        </a>
+        
+                                                    </td>
+                                                </tr>
+        
+                                            </tbody>
+                                            <tfoot></tfoot>
+                                        </table>
+                                    </div>
+        
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script type='module' src="assets/js/connexion.js"></script>
+    <script type='module' src="assets/js/dashbord.js"></script>
+    <script type='module' src="assets/js/stocks-sales.js"></script>
+    <script type='module' src="assets/js/user.js"></script>
+    <script type='module' src="assets/js/base.js"></script>
+    <script type='module' src="assets/js/mymodules.js"></script>
+</body>
+
+</html>

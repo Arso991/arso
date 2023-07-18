@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+    <span class="overlay"></span>
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__left">
+                <aside class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__top__logo">
+                            <div class="sidebar__logo">
+                                <a href=""><img src="" alt="">Cshop</a>
+                            </div>
+                        </div>
+                        <div class="sidebar__top__menu">
+                            <ul class="sidebar__menu__list">
+                                <li class="sidebar__list__item active">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo active ">
+                                            <span class="mdi mdi-view-grid-outline"></span>
+                                        </div>
+                                        <p class="menu__name">Dashbord</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item ">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-tag"></span>
+                                        </div>
+                                        <p class="menu__name">Stock</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Caisse</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-account-group"></span>
+                                        </div>
+                                        <p class="menu__name">Gestion d'utilisateur</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-golf-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Requête</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <div class="sidebar__day__date">
+                            <p class="date">15 juillet 2023</p>
+                            <p class="hour">23:00:00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="content__right">
+                <header>
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="navbar__left">
+                                <span></span>
+                            </div>
+                            <div class="navbar__right">
+                                <div class="navbar__right__notification__icone">
+                                    <span class="mdi mdi-bell"></span>
+                                </div>
+                                <span class="navbar__right__seperator"></span>
+                                <div class="user">
+                                    <a href="#">
+                                        <img src="assets/imgs/users/olivier.jpg" alt="">
+                                        <p>DOSSOU Zénaîde</p>
+                                    </a>
+                                    <div class="deconnexion">
+                                        <div class="deconnexion__modal">
+                                            <span class="mdi mdi-logout"></span>
+                                            <p>Déconnexion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="container">
+                        <div class="dashbord__main__content">
+                            <div class="dashbord_title">
+                                <h2>Dashbord</h2>
+                            </div>
+                            <div class="dashbord__card__content">
+                                <div class="card__box">
+                                    <div class="card__icone">
+                                        <span class="mdi mdi-chart-line"></span>
+                                    </div>
+                                    <div class="card__number">
+                                        <h3 id="seles_total"></h3>
+                                        <p>Total des ventes</p>
+                                    </div>
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__icone">
+                                        <span class="mdi mdi-currency-usd"></span>
+                                    </div>
+                                    <div class="card__number">
+                                        <h3 id="cost_total"></h3>
+                                        <p>Coût total</p>
+                                    </div>
+                                </div>
+
+                                <div class="card__box">
+                                    <div class="card__icone">
+                                        <span class="mdi mdi-cube-outline"></span>
+                                    </div>
+                                    <div class="card__number">
+                                        <h3 id="product_seles"></h3>
+                                        <p>Commandes Totales</p>
+                                    </div>
+                                </div>
+                                <div class="card__box">
+                                    <div class="card__icone">
+                                        <span class="mdi mdi-bitcoin"></span>
+                                    </div>
+                                    <div class="card__number">
+                                        <h3 id="available_stock"></h3>
+                                        <p>Stock disponible</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="dashbord__date_form">
+                                <form action="" method="post">
+                                    <select name="" id="bilan_select">
+                                        <option value="last 7 days">last 7 days</option>
+                                        <option value="last 3 days">last 3 days</option>
+                                        <option value="last years">last years</option>
+                                        <option value="last 6 month">last 6 month</option>
+                                        <option value="last 3 month">last 3 month</option>
+                                        <option value="last month">last month</option>
+                                    </select>
+                                    <input type="date" id="startDate" name="startDate">
+                                    <input type="date" id="endDate" name="endDate">
+                                </form>
+                            </div>
+                            <div class="dashbord__bilan__content">
+                                <div class="bilan__box">
+                                    <div class="revenu_vs_cost">
+                                        <h3>Revenus vs coûts</h3>
+                                    </div>
+                                    <div class="content__bilan__graphes">
+                                            <canvas id="barCanvas" aria-label="chart" role="img"></canvas>
+                                    </div>
+                                </div>
+                                <div class="bilan__box">
+                                    <div class="revenu_vs_cost">
+                                        <h3>Récapitulatif des achats</h3>
+                                    </div>
+                                    <div class="content__bilan__graphes">
+                                            <canvas id="lineCanvas" aria-label="chart" role="img"></canvas>
+                                    </div>
+                                </div>
+                                <div class="bilan__box">
+                                    <div class="revenu_vs_cost">
+                                        <h3>Nombre d'unités vendues</h3>
+                                    </div>
+                                    <div class="content__bilan__graphes">
+                                            <canvas id="myChart" aria-label="chart" role="img"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <div class="container">
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="assets/js/connexion.js"></script>
+    <script src="assets/js/dashbord.js"></script>
+    <script src="assets/js/stocks-sales.js"></script>
+    <script src="assets/js/user.js"></script>
+    <script src="assets/js/base.js"></script>
+</body>
+
+</html>

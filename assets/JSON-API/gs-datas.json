@@ -1,0 +1,1589 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "olivier",
+      "lastName": "koubolou",
+      "userName": "ozondo",
+      "email": "oliverzondo90@gmail.com",
+      "password": "1256",
+      "picture": "",
+      "role": "admin",
+      "privilege": 3,
+      "dateCreat": "18/07/2023",
+      "status": "active"
+    },
+    {
+      "firstName": "LORINE",
+      "lastName": "pierre",
+      "userName": "TOTO",
+      "email": "zodddddd0@gmail.com",
+      "password": "1256",
+      "picture": "",
+      "role": "admin",
+      "privilege": 3,
+      "id": 2,
+      "dateCreat": "31/09/2023",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "firstName": "lulu",
+      "lastName": "john",
+      "userName": "cashier1",
+      "email": "cashier1@example.com",
+      "password": "ca455r1pss",
+      "picture": "",
+      "role": "cashier",
+      "privilege": 1,
+      "dateCreat": "02/01/2018",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "firstName": "mark",
+      "lastName": "codjo",
+      "userName": "cashier2",
+      "email": "cashier2@example.com",
+      "password": "cashier2pass",
+      "picture": "",
+      "role": "cashier",
+      "privilege": 1,
+      "dateCreat": "10/10/2021",
+      "status": "inactive"
+    },
+    {
+      "id": 5,
+      "firstName": "dodo",
+      "lastName": "loko",
+      "userName": "cashier3",
+      "email": "cashier3@example.com",
+      "password": "cashier3pass",
+      "picture": "",
+      "role": "cashier",
+      "privilege": 1,
+      "dateCreat": "25/10/2022",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "firstName": "marie",
+      "lastName": "Aivi",
+      "userName": "cashier4",
+      "email": "cashier4@example.com",
+      "password": "cashier4pass",
+      "picture": "",
+      "role": "cashier",
+      "privilege": 1,
+      "dateCreat": "25/2/2018",
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "firstName": "Sarah",
+      "lastName": "Smith",
+      "userName": "sarahsmith",
+      "email": "sarahsmith@example.com",
+      "password": "sarah123",
+      "picture": "",
+      "role": "manager",
+      "privilege": 2,
+      "dateCreat": "15/11/2021",
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "userName": "mjohnson",
+      "email": "michaeljohnson@example.com",
+      "password": "mj345",
+      "picture": "",
+      "role": "manager",
+      "privilege": 2,
+      "dateCreat": "10/12/2022",
+      "status": "inactive"
+    },
+    {
+      "id": 9,
+      "firstName": "Emily",
+      "lastName": "Brown",
+      "userName": "ebrown",
+      "email": "emilybrown@example.com",
+      "password": "485963",
+      "picture": "www.doc.jpg",
+      "role": "admin",
+      "privilege": 3,
+      "dateCreat": "05/01/2023",
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "firstName": "olivier",
+      "lastName": "koubolou",
+      "userName": "ozondo",
+      "email": "oliverzondo90@gmail.com",
+      "password": "1256",
+      "picture": "",
+      "role": "admin",
+      "privilege": 3,
+      "dateCreat": "25/10/2022",
+      "status": "active"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "item-name": "Stylish Shirt",
+      "description": "A fashionable shirt with a modern design.",
+      "price": 29.99,
+      "category": "Shirts",
+      "brand": "FashionCo",
+      "color": "Black",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/shirt.jpg",
+      "stock": 100,
+      "discounted-price": 24.99,
+      "material": "Cotton",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "item-name": "Elegant Dress",
+      "description": "A beautiful and elegant dress for special occasions.",
+      "price": 59.99,
+      "category": "Dresses",
+      "brand": "Glamour Boutique",
+      "color": "Red",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/dress.jpg",
+      "stock": 50,
+      "discounted-price": null,
+      "material": "Silk",
+      "gender": "Female",
+      "season": "Summer",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "item-name": "Classic Leather Jacket",
+      "description": "A timeless leather jacket with a rugged design.",
+      "price": 149.99,
+      "category": "Jackets",
+      "brand": "Vintage Style",
+      "color": "Brown",
+      "size": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/jacket.jpg",
+      "stock": 30,
+      "discounted-price": null,
+      "material": "Leather",
+      "gender": "Male",
+      "season": "Winter",
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "item-name": "Casual Jeans",
+      "description": "Comfortable and stylish jeans for everyday wear.",
+      "price": 39.99,
+      "category": "Jeans",
+      "brand": "Denim Co.",
+      "color": "Blue",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/jeans.jpg",
+      "stock": 80,
+      "discounted-price": null,
+      "material": "Denim",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "item-name": "Sporty Sneakers",
+      "description": "Stylish and comfortable sneakers for sports and casual wear.",
+      "price": 79.99,
+      "category": "Shoes",
+      "brand": "Active Footwear",
+      "color": "White",
+      "size": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10"
+      ],
+      "image-url": "https://example.com/images/sneakers.jpg",
+      "stock": 60,
+      "discounted-price": 69.99,
+      "material": "Mesh",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.4
+    },
+    {
+      "id": 6,
+      "item-name": "Striped Sweater",
+      "description": "A cozy sweater with stylish striped pattern.",
+      "price": 49.99,
+      "category": "Sweaters",
+      "brand": "FashionCo",
+      "color": "Navy Blue",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/sweater.jpg",
+      "stock": 40,
+      "discounted-price": null,
+      "material": "Acrylic",
+      "gender": "Unisex",
+      "season": "Fall",
+      "rating": 4.3
+    },
+    {
+      "id": 7,
+      "item-name": "Floral Maxi Dress",
+      "description": "A beautiful maxi dress with floral print for a feminine look.",
+      "price": 79.99,
+      "category": "Dresses",
+      "brand": "Fancy Boutique",
+      "color": "Pink",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/maxi-dress.jpg",
+      "stock": 20,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "Spring",
+      "rating": 4.7
+    },
+    {
+      "id": 8,
+      "item-name": "Leather Belt",
+      "description": "A stylish leather belt to complete your outfit.",
+      "price": 24.99,
+      "category": "Accessories",
+      "brand": "Classic Accents",
+      "color": "Brown",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/belt.jpg",
+      "stock": 100,
+      "discounted-price": null,
+      "material": "Leather",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.1
+    },
+    {
+      "id": 9,
+      "item-name": "Denim Shorts",
+      "description": "Comfortable denim shorts for a casual summer look.",
+      "price": 34.99,
+      "category": "Shorts",
+      "brand": "Denim Co.",
+      "color": "Light Blue",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/shorts.jpg",
+      "stock": 70,
+      "discounted-price": null,
+      "material": "Denim",
+      "gender": "Unisex",
+      "season": "Summer",
+      "rating": 4.4
+    },
+    {
+      "id": 10,
+      "item-name": "Classic Oxford Shoes",
+      "description": "Elegant and versatile Oxford shoes for formal occasions.",
+      "price": 109.99,
+      "category": "Shoes",
+      "brand": "Elegance Footwear",
+      "color": "Black",
+      "size": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10"
+      ],
+      "image-url": "https://example.com/images/oxford-shoes.jpg",
+      "stock": 30,
+      "discounted-price": null,
+      "material": "Leather",
+      "gender": "Male",
+      "season": "All Seasons",
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "item-name": "Printed T-Shirt",
+      "description": "A trendy printed t-shirt for a casual and stylish look.",
+      "price": 19.99,
+      "category": "T-Shirts",
+      "brand": "FashionCo",
+      "color": "White",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/t-shirt.jpg",
+      "stock": 90,
+      "discounted-price": null,
+      "material": "Cotton",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.2
+    },
+    {
+      "id": 12,
+      "item-name": "Pleated Skirt",
+      "description": "A chic pleated skirt for a sophisticated look.",
+      "price": 44.99,
+      "category": "Skirts",
+      "brand": "Chic Styles",
+      "color": "Black",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/skirt.jpg",
+      "stock": 60,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "Spring",
+      "rating": 4.6
+    },
+    {
+      "id": 13,
+      "item-name": "Suede Jacket",
+      "description": "A stylish suede jacket for a fashionable look.",
+      "price": 99.99,
+      "category": "Jackets",
+      "brand": "Trendy Outfits",
+      "color": "Tan",
+      "size": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/suede-jacket.jpg",
+      "stock": 40,
+      "discounted-price": null,
+      "material": "Suede",
+      "gender": "Unisex",
+      "season": "Fall",
+      "rating": 4.3
+    },
+    {
+      "id": 14,
+      "item-name": "Slim Fit Chinos",
+      "description": "Classic slim fit chinos for a smart and polished look.",
+      "price": 49.99,
+      "category": "Pants",
+      "brand": "FashionCo",
+      "color": "Navy Blue",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/chinos.jpg",
+      "stock": 80,
+      "discounted-price": null,
+      "material": "Cotton",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.5
+    },
+    {
+      "id": 15,
+      "item-name": "Strappy Heels",
+      "description": "Elegant and fashionable strappy heels for special occasions.",
+      "price": 89.99,
+      "category": "Shoes",
+      "brand": "Glamour Boutique",
+      "color": "Silver",
+      "size": [
+        "US 6",
+        "US 7",
+        "US 8",
+        "US 9"
+      ],
+      "image-url": "https://example.com/images/heels.jpg",
+      "stock": 25,
+      "discounted-price": null,
+      "material": "Synthetic",
+      "gender": "Female",
+      "season": "All Seasons",
+      "rating": 4.7
+    },
+    {
+      "id": 16,
+      "item-name": "Graphic Hoodie",
+      "description": "A comfortable hoodie with a cool graphic print.",
+      "price": 39.99,
+      "category": "Hoodies",
+      "brand": "Street Style",
+      "color": "Gray",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/hoodie.jpg",
+      "stock": 70,
+      "discounted-price": null,
+      "material": "Cotton",
+      "gender": "Unisex",
+      "season": "Fall",
+      "rating": 4.4
+    },
+    {
+      "id": 17,
+      "item-name": "Bohemian Maxi Dress",
+      "description": "A bohemian-style maxi dress for a free-spirited look.",
+      "price": 69.99,
+      "category": "Dresses",
+      "brand": "Boho Chic",
+      "color": "Multicolor",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/maxi-dress-boho.jpg",
+      "stock": 30,
+      "discounted-price": null,
+      "material": "Rayon",
+      "gender": "Female",
+      "season": "Summer",
+      "rating": 4.3
+    },
+    {
+      "id": 18,
+      "item-name": "Leather Backpack",
+      "description": "A stylish leather backpack for everyday use.",
+      "price": 79.99,
+      "category": "Bags",
+      "brand": "Urban Outfitters",
+      "color": "Brown",
+      "size": [
+        "One Size"
+      ],
+      "image-url": "https://example.com/images/backpack.jpg",
+      "stock": 50,
+      "discounted-price": null,
+      "material": "Leather",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.5
+    },
+    {
+      "id": 19,
+      "item-name": "Printed Scarf",
+      "description": "A fashionable printed scarf to accessorize your outfit.",
+      "price": 19.99,
+      "category": "Accessories",
+      "brand": "FashionCo",
+      "color": "Blue",
+      "size": [
+        "One Size"
+      ],
+      "image-url": "https://example.com/images/scarf.jpg",
+      "stock": 100,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.2
+    },
+    {
+      "id": 20,
+      "item-name": "Denim Jacket",
+      "description": "A versatile denim jacket for a casual and trendy look.",
+      "price": 69.99,
+      "category": "Jackets",
+      "brand": "Denim Co.",
+      "color": "Blue",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/denim-jacket.jpg",
+      "stock": 60,
+      "discounted-price": null,
+      "material": "Denim",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.7
+    },
+    {
+      "id": 21,
+      "item-name": "Cropped Sweater",
+      "description": "A trendy cropped sweater for a modern and stylish look.",
+      "price": 34.99,
+      "category": "Sweaters",
+      "brand": "Fashion Forward",
+      "color": "Beige",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/cropped-sweater.jpg",
+      "stock": 40,
+      "discounted-price": null,
+      "material": "Acrylic",
+      "gender": "Female",
+      "season": "Fall",
+      "rating": 4.4
+    },
+    {
+      "id": 22,
+      "item-name": "Tailored Suit",
+      "description": "A well-fitted tailored suit for a polished and sophisticated look.",
+      "price": 199.99,
+      "category": "Suits",
+      "brand": "Elegance Boutique",
+      "color": "Charcoal Gray",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/suit.jpg",
+      "stock": 20,
+      "discounted-price": null,
+      "material": "Wool",
+      "gender": "Male",
+      "season": "All Seasons",
+      "rating": 4.6
+    },
+    {
+      "id": 23,
+      "item-name": "Ruffled Blouse",
+      "description": "A feminine blouse with stylish ruffled details.",
+      "price": 39.99,
+      "category": "Blouses",
+      "brand": "Chic Styles",
+      "color": "White",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/blouse.jpg",
+      "stock": 50,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "Spring",
+      "rating": 4.2
+    },
+    {
+      "id": 24,
+      "item-name": "Pleated Trousers",
+      "description": "Elegant pleated trousers for a sophisticated and polished look.",
+      "price": 59.99,
+      "category": "Pants",
+      "brand": "FashionCo",
+      "color": "Black",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/trousers.jpg",
+      "stock": 70,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.5
+    },
+    {
+      "id": 25,
+      "item-name": "Ankle Boots",
+      "description": "Stylish ankle boots for a fashionable and trendy look.",
+      "price": 89.99,
+      "category": "Shoes",
+      "brand": "Trendy Footwear",
+      "color": "Black",
+      "size": [
+        "US 6",
+        "US 7",
+        "US 8",
+        "US 9"
+      ],
+      "image-url": "https://example.com/images/ankle-boots.jpg",
+      "stock": 30,
+      "discounted-price": null,
+      "material": "Faux Leather",
+      "gender": "Female",
+      "season": "Fall",
+      "rating": 4.7
+    },
+    {
+      "id": 26,
+      "item-name": "Plaid Skirt",
+      "description": "A classic plaid skirt for a preppy and stylish look.",
+      "price": 44.99,
+      "category": "Skirts",
+      "brand": "Prep Style",
+      "color": "Red",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/plaid-skirt.jpg",
+      "stock": 40,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "Fall",
+      "rating": 4.3
+    },
+    {
+      "id": 27,
+      "item-name": "Quilted Jacket",
+      "description": "A stylish quilted jacket for a trendy and cozy look.",
+      "price": 79.99,
+      "category": "Jackets",
+      "brand": "FashionCo",
+      "color": "Navy Blue",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/quilted-jacket.jpg",
+      "stock": 20,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Unisex",
+      "season": "Winter",
+      "rating": 4.5
+    },
+    {
+      "id": 28,
+      "item-name": "Cropped Wide-Leg Pants",
+      "description": "A trendy and comfortable pair of cropped wide-leg pants.",
+      "price": 49.99,
+      "category": "Pants",
+      "brand": "Fashion Forward",
+      "color": "Beige",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/wide-leg-pants.jpg",
+      "stock": 60,
+      "discounted-price": null,
+      "material": "Cotton",
+      "gender": "Female",
+      "season": "Spring",
+      "rating": 4.6
+    },
+    {
+      "id": 29,
+      "item-name": "Canvas Sneakers",
+      "description": "Casual and comfortable canvas sneakers for everyday wear.",
+      "price": 39.99,
+      "category": "Shoes",
+      "brand": "Sporty Style",
+      "color": "White",
+      "size": [
+        "US 7",
+        "US 8",
+        "US 9",
+        "US 10"
+      ],
+      "image-url": "https://example.com/images/canvas-sneakers.jpg",
+      "stock": 80,
+      "discounted-price": null,
+      "material": "Canvas",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.4
+    },
+    {
+      "id": 30,
+      "item-name": "Printed Kimono",
+      "description": "A stylish printed kimono for a bohemian-inspired look.",
+      "price": 59.99,
+      "category": "Outerwear",
+      "brand": "Boho Chic",
+      "color": "Multicolor",
+      "size": [
+        "One Size"
+      ],
+      "image-url": "https://example.com/images/kimono.jpg",
+      "stock": 50,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "Spring",
+      "rating": 4.2
+    },
+    {
+      "id": 31,
+      "item-name": "Faux Fur Coat",
+      "description": "A luxurious faux fur coat for a glamorous and stylish look.",
+      "price": 149.99,
+      "category": "Coats",
+      "brand": "Glamour Boutique",
+      "color": "Black",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/faux-fur-coat.jpg",
+      "stock": 70,
+      "discounted-price": null,
+      "material": "Faux Fur",
+      "gender": "Female",
+      "season": "Winter",
+      "rating": 4.7
+    },
+    {
+      "id": 32,
+      "item-name": "Printed Leggings",
+      "description": "Comfortable and stylish printed leggings for workouts and casual wear.",
+      "price": 29.99,
+      "category": "Leggings",
+      "brand": "Active Wear",
+      "color": "Blue",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/leggings.jpg",
+      "stock": 30,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "All Seasons",
+      "rating": 4.3
+    },
+    {
+      "id": 33,
+      "item-name": "Classic Trench Coat",
+      "description": "A timeless and classic trench coat for a sophisticated look.",
+      "price": 179.99,
+      "category": "Coats",
+      "brand": "Elegance Boutique",
+      "color": "Beige",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/trench-coat.jpg",
+      "stock": 40,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Unisex",
+      "season": "Spring",
+      "rating": 4.5
+    },
+    {
+      "id": 34,
+      "item-name": "Ruffled Blouse",
+      "description": "A feminine blouse with stylish ruffled details.",
+      "price": 39.99,
+      "category": "Blouses",
+      "brand": "Chic Styles",
+      "color": "White",
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "image-url": "https://example.com/images/blouse.jpg",
+      "stock": 50,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Female",
+      "season": "Spring",
+      "rating": 4.2
+    },
+    {
+      "id": 35,
+      "item-name": "Pleated Trousers",
+      "description": "Elegant pleated trousers for a sophisticated and polished look.",
+      "price": 59.99,
+      "category": "Pants",
+      "brand": "FashionCo",
+      "color": "Black",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "image-url": "https://example.com/images/trousers.jpg",
+      "stock": 70,
+      "discounted-price": null,
+      "material": "Polyester",
+      "gender": "Unisex",
+      "season": "All Seasons",
+      "rating": 4.5
+    }
+  ],
+  "orders": [
+    {
+      "orderID": 2,
+      "customerName": "Jane Smith",
+      "customerEmail": "janesmith@example.com",
+      "shippingAddress": "456 Elm Street, City, Country",
+      "orderDate": "2023-07-15",
+      "products": [
+        {
+          "productID": 3,
+          "productName": "Classic Leather Jacket",
+          "quantity": 1,
+          "price": 149.99,
+          "subtotal": 149.99
+        },
+        {
+          "productID": 4,
+          "productName": "Casual Jeans",
+          "quantity": 2,
+          "price": 39.99,
+          "subtotal": 79.98
+        }
+      ],
+      "totalQuantity": 3,
+      "totalPrice": 229.97,
+      "paymentMethod": "PayPal",
+      "orderStatus": "Shipped",
+      "trackingNumber": "ABC123456",
+      "shippingMethod": "Express",
+      "notes": "Please leave package at the front porch."
+    },
+    {
+      "orderID": 3,
+      "customerName": "Sarah Johnson",
+      "customerEmail": "sarahjohnson@example.com",
+      "shippingAddress": "789 Oak Avenue, City, Country",
+      "orderDate": "2023-07-16",
+      "products": [
+        {
+          "productID": 5,
+          "productName": "Sporty Sneakers",
+          "quantity": 1,
+          "price": 79.99,
+          "subtotal": 79.99
+        }
+      ],
+      "totalQuantity": 1,
+      "totalPrice": 79.99,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Delivered",
+      "trackingNumber": "DEF987654",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 4,
+      "customerName": "Michael Brown",
+      "customerEmail": "michaelbrown@example.com",
+      "shippingAddress": "1010 Pine Street, City, Country",
+      "orderDate": "2023-07-17",
+      "products": [
+        {
+          "productID": 6,
+          "productName": "Striped Sweater",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        },
+        {
+          "productID": 7,
+          "productName": "Floral Maxi Dress",
+          "quantity": 1,
+          "price": 79.99,
+          "subtotal": 79.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 129.98,
+      "paymentMethod": "Bank Transfer",
+      "orderStatus": "Pending",
+      "trackingNumber": "",
+      "shippingMethod": "Standard",
+      "notes": "Please include a gift receipt."
+    },
+    {
+      "orderID": 5,
+      "customerName": "Emily Davis",
+      "customerEmail": "emilydavis@example.com",
+      "shippingAddress": "1212 Maple Avenue, City, Country",
+      "orderDate": "2023-07-18",
+      "products": [
+        {
+          "productID": 8,
+          "productName": "Leather Belt",
+          "quantity": 1,
+          "price": 24.99,
+          "subtotal": 24.99
+        },
+        {
+          "productID": 9,
+          "productName": "Denim Shorts",
+          "quantity": 1,
+          "price": 34.99,
+          "subtotal": 34.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 59.98,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Shipped",
+      "trackingNumber": "GHI456789",
+      "shippingMethod": "Express",
+      "notes": "Please include a gift message."
+    },
+    {
+      "orderID": 6,
+      "customerName": "David Wilson",
+      "customerEmail": "davidwilson@example.com",
+      "shippingAddress": "1313 Chestnut Street, City, Country",
+      "orderDate": "2023-07-19",
+      "products": [
+        {
+          "productID": 10,
+          "productName": "Knitted Sweater",
+          "quantity": 1,
+          "price": 54.99,
+          "subtotal": 54.99
+        },
+        {
+          "productID": 11,
+          "productName": "Chic Handbag",
+          "quantity": 1,
+          "price": 89.99,
+          "subtotal": 89.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 144.98,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Delivered",
+      "trackingNumber": "JKL321654",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 7,
+      "customerName": "Olivia Anderson",
+      "customerEmail": "oliviaanderson@example.com",
+      "shippingAddress": "1414 Walnut Street, City, Country",
+      "orderDate": "2023-07-20",
+      "products": [
+        {
+          "productID": 12,
+          "productName": "Printed Blouse",
+          "quantity": 1,
+          "price": 39.99,
+          "subtotal": 39.99
+        },
+        {
+          "productID": 13,
+          "productName": "Slim Fit Trousers",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 89.98,
+      "paymentMethod": "PayPal",
+      "orderStatus": "Pending",
+      "trackingNumber": "",
+      "shippingMethod": "Standard",
+      "notes": "Please include a gift receipt."
+    },
+    {
+      "orderID": 8,
+      "customerName": "Sophia Martinez",
+      "customerEmail": "sophiamartinez@example.com",
+      "shippingAddress": "1515 Pine Street, City, Country",
+      "orderDate": "2023-07-21",
+      "products": [
+        {
+          "productID": 14,
+          "productName": "Casual T-Shirt",
+          "quantity": 2,
+          "price": 19.99,
+          "subtotal": 39.98
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 39.98,
+      "paymentMethod": "Bank Transfer",
+      "orderStatus": "Shipped",
+      "trackingNumber": "MNO987654",
+      "shippingMethod": "Express",
+      "notes": "Please prioritize expedited shipping."
+    },
+    {
+      "orderID": 9,
+      "customerName": "Noah Taylor",
+      "customerEmail": "noahtaylor@example.com",
+      "shippingAddress": "1616 Oak Avenue, City, Country",
+      "orderDate": "2023-07-22",
+      "products": [
+        {
+          "productID": 15,
+          "productName": "Printed Skirt",
+          "quantity": 1,
+          "price": 44.99,
+          "subtotal": 44.99
+        },
+        {
+          "productID": 16,
+          "productName": "Athletic Shoes",
+          "quantity": 1,
+          "price": 69.99,
+          "subtotal": 69.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 114.98,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Delivered",
+      "trackingNumber": "PQR123456",
+      "shippingMethod": "Standard",
+      "notes": "Please include a gift message."
+    },
+    {
+      "orderID": 10,
+      "customerName": "Ava Clark",
+      "customerEmail": "avaclark@example.com",
+      "shippingAddress": "1717 Maple Avenue, City, Country",
+      "orderDate": "2023-07-23",
+      "products": [
+        {
+          "productID": 17,
+          "productName": "Leather Wallet",
+          "quantity": 1,
+          "price": 29.99,
+          "subtotal": 29.99
+        },
+        {
+          "productID": 18,
+          "productName": "Floral Top",
+          "quantity": 1,
+          "price": 34.99,
+          "subtotal": 34.99
+        },
+        {
+          "productID": 19,
+          "productName": "Denim Jacket",
+          "quantity": 1,
+          "price": 89.99,
+          "subtotal": 89.99
+        }
+      ],
+      "totalQuantity": 3,
+      "totalPrice": 154.97,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Pending",
+      "trackingNumber": "",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 11,
+      "customerName": "Liam Wright",
+      "customerEmail": "liamwright@example.com",
+      "shippingAddress": "1818 Elm Street, City, Country",
+      "orderDate": "2023-07-24",
+      "products": [
+        {
+          "productID": 20,
+          "productName": "Striped Polo Shirt",
+          "quantity": 2,
+          "price": 24.99,
+          "subtotal": 49.98
+        },
+        {
+          "productID": 21,
+          "productName": "Slim Fit Chinos",
+          "quantity": 1,
+          "price": 39.99,
+          "subtotal": 39.99
+        },
+        {
+          "productID": 22,
+          "productName": "Canvas Sneakers",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        }
+      ],
+      "totalQuantity": 4,
+      "totalPrice": 139.96,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Shipped",
+      "trackingNumber": "STU987654",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 12,
+      "customerName": "Emma Rodriguez",
+      "customerEmail": "emmarodriguez@example.com",
+      "shippingAddress": "1919 Pine Street, City, Country",
+      "orderDate": "2023-07-25",
+      "products": [
+        {
+          "productID": 23,
+          "productName": "Printed Maxi Dress",
+          "quantity": 1,
+          "price": 59.99,
+          "subtotal": 59.99
+        }
+      ],
+      "totalQuantity": 1,
+      "totalPrice": 59.99,
+      "paymentMethod": "PayPal",
+      "orderStatus": "Delivered",
+      "trackingNumber": "VWX123456",
+      "shippingMethod": "Standard",
+      "notes": "Please handle with care."
+    },
+    {
+      "orderID": 13,
+      "customerName": "Mia Hernandez",
+      "customerEmail": "miahernandez@example.com",
+      "shippingAddress": "2020 Oak Avenue, City, Country",
+      "orderDate": "2023-07-26",
+      "products": [
+        {
+          "productID": 24,
+          "productName": "Knitted Cardigan",
+          "quantity": 1,
+          "price": 44.99,
+          "subtotal": 44.99
+        },
+        {
+          "productID": 25,
+          "productName": "Slim Fit Jeans",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        },
+        {
+          "productID": 26,
+          "productName": "Leather Boots",
+          "quantity": 1,
+          "price": 89.99,
+          "subtotal": 89.99
+        }
+      ],
+      "totalQuantity": 3,
+      "totalPrice": 184.97,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Pending",
+      "trackingNumber": "",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 14,
+      "customerName": "James Lee",
+      "customerEmail": "jameslee@example.com",
+      "shippingAddress": "2121 Maple Avenue, City, Country",
+      "orderDate": "2023-07-27",
+      "products": [
+        {
+          "productID": 27,
+          "productName": "Striped Sweater",
+          "quantity": 1,
+          "price": 39.99,
+          "subtotal": 39.99
+        },
+        {
+          "productID": 28,
+          "productName": "Chic Handbag",
+          "quantity": 1,
+          "price": 69.99,
+          "subtotal": 69.99
+        },
+        {
+          "productID": 29,
+          "productName": "Tailored Blazer",
+          "quantity": 1,
+          "price": 99.99,
+          "subtotal": 99.99
+        }
+      ],
+      "totalQuantity": 3,
+      "totalPrice": 209.97,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Shipped",
+      "trackingNumber": "YZA987654",
+      "shippingMethod": "Express",
+      "notes": ""
+    },
+    {
+      "orderID": 15,
+      "customerName": "Benjamin Garcia",
+      "customerEmail": "benjamingarcia@example.com",
+      "shippingAddress": "2222 Pine Street, City, Country",
+      "orderDate": "2023-07-28",
+      "products": [
+        {
+          "productID": 30,
+          "productName": "Printed Blouse",
+          "quantity": 1,
+          "price": 34.99,
+          "subtotal": 34.99
+        },
+        {
+          "productID": 31,
+          "productName": "Cropped Pants",
+          "quantity": 1,
+          "price": 44.99,
+          "subtotal": 44.99
+        },
+        {
+          "productID": 32,
+          "productName": "Platform Sandals",
+          "quantity": 1,
+          "price": 79.99,
+          "subtotal": 79.99
+        }
+      ],
+      "totalQuantity": 3,
+      "totalPrice": 159.97,
+      "paymentMethod": "Bank Transfer",
+      "orderStatus": "Delivered",
+      "trackingNumber": "ABC654321",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 16,
+      "customerName": "Isabella Young",
+      "customerEmail": "isabellayoung@example.com",
+      "shippingAddress": "2323 Elm Street, City, Country",
+      "orderDate": "2023-07-29",
+      "products": [
+        {
+          "productID": 33,
+          "productName": "Printed Maxi Skirt",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        },
+        {
+          "productID": 34,
+          "productName": "Classic Oxford Shoes",
+          "quantity": 1,
+          "price": 89.99,
+          "subtotal": 89.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 139.98,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Shipped",
+      "trackingNumber": "DEF789654",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 17,
+      "customerName": "Alexander Hall",
+      "customerEmail": "alexanderhall@example.com",
+      "shippingAddress": "2424 Pine Street, City, Country",
+      "orderDate": "2023-07-30",
+      "products": [
+        {
+          "productID": 35,
+          "productName": "Casual T-Shirt",
+          "quantity": 2,
+          "price": 19.99,
+          "subtotal": 39.98
+        },
+        {
+          "productID": 36,
+          "productName": "Denim Shorts",
+          "quantity": 1,
+          "price": 34.99,
+          "subtotal": 34.99
+        },
+        {
+          "productID": 37,
+          "productName": "Canvas Sneakers",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        }
+      ],
+      "totalQuantity": 4,
+      "totalPrice": 124.96,
+      "paymentMethod": "PayPal",
+      "orderStatus": "Delivered",
+      "trackingNumber": "GHI987654",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 18,
+      "customerName": "Charlotte Allen",
+      "customerEmail": "charlotteallen@example.com",
+      "shippingAddress": "2525 Oak Avenue, City, Country",
+      "orderDate": "2023-07-31",
+      "products": [
+        {
+          "productID": 38,
+          "productName": "Knitted Sweater",
+          "quantity": 1,
+          "price": 54.99,
+          "subtotal": 54.99
+        },
+        {
+          "productID": 39,
+          "productName": "Slim Fit Jeans",
+          "quantity": 1,
+          "price": 49.99,
+          "subtotal": 49.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 104.98,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Pending",
+      "trackingNumber": "",
+      "shippingMethod": "Standard",
+      "notes": ""
+    },
+    {
+      "orderID": 19,
+      "customerName": "Harper Cook",
+      "customerEmail": "harpercook@example.com",
+      "shippingAddress": "2626 Maple Avenue, City, Country",
+      "orderDate": "2023-08-01",
+      "products": [
+        {
+          "productID": 40,
+          "productName": "Striped Polo Shirt",
+          "quantity": 1,
+          "price": 24.99,
+          "subtotal": 24.99
+        },
+        {
+          "productID": 41,
+          "productName": "Chic Handbag",
+          "quantity": 1,
+          "price": 89.99,
+          "subtotal": 89.99
+        },
+        {
+          "productID": 42,
+          "productName": "Tailored Blazer",
+          "quantity": 1,
+          "price": 99.99,
+          "subtotal": 99.99
+        }
+      ],
+      "totalQuantity": 3,
+      "totalPrice": 214.97,
+      "paymentMethod": "Credit Card",
+      "orderStatus": "Shipped",
+      "trackingNumber": "JKL654321",
+      "shippingMethod": "Express",
+      "notes": ""
+    },
+    {
+      "orderID": 20,
+      "customerName": "Lucas Hernandez",
+      "customerEmail": "lucashernandez@example.com",
+      "shippingAddress": "2727 Pine Street, City, Country",
+      "orderDate": "2023-08-02",
+      "products": [
+        {
+          "productID": 43,
+          "productName": "Printed Blouse",
+          "quantity": 1,
+          "price": 34.99,
+          "subtotal": 34.99
+        },
+        {
+          "productID": 44,
+          "productName": "Cropped Pants",
+          "quantity": 1,
+          "price": 44.99,
+          "subtotal": 44.99
+        }
+      ],
+      "totalQuantity": 2,
+      "totalPrice": 79.98,
+      "paymentMethod": "Bank Transfer",
+      "orderStatus": "Delivered",
+      "trackingNumber": "MNO654321",
+      "shippingMethod": "Standard",
+      "notes": ""
+    }
+  ],
+  "requests": [
+    {
+      "request_number": "ORD001",
+      "supplier": "Supplier A",
+      "request_date": "2023-07-14",
+      "product": [
+        {
+          "product_id": "P1",
+          "product_name": "Product 1",
+          "quantity": 10,
+          "unit_price": 9.99
+        },
+        {
+          "product_id": "P2",
+          "product_name": "Product 2",
+          "quantity": 5,
+          "unit_price": 14.99
+        }
+      ],
+      "total_amount": 149.85
+    },
+    {
+      "request_number": "ORD002",
+      "supplier": "Supplier B",
+      "request_date": "2023-07-15",
+      "product": [
+        {
+          "product_id": "P3",
+          "product_name": "Product 3",
+          "quantity": 8,
+          "unit_price": 19.99
+        },
+        {
+          "product_id": "P4",
+          "product_name": "Product 4",
+          "quantity": 2,
+          "unit_price": 49.99
+        }
+      ],
+      "total_amount": 219.92
+    },
+    {
+      "request_number": "ORD003",
+      "supplier": "Supplier C",
+      "request_date": "2023-07-16",
+      "product": [
+        {
+          "product_id": "P5",
+          "product_name": "Product 5",
+          "quantity": 3,
+          "unit_price": 8.99
+        }
+      ],
+      "total_amount": 26.97
+    },
+    {
+      "request_number": "ORD004",
+      "supplier": "Supplier A",
+      "request_date": "2023-07-16",
+      "product": [
+        {
+          "product_id": "P2",
+          "product_name": "Product 2",
+          "quantity": 5,
+          "unit_price": 14.99
+        },
+        {
+          "product_id": "P4",
+          "product_name": "Product 4",
+          "quantity": 3,
+          "unit_price": 49.99
+        },
+        {
+          "product_id": "P6",
+          "product_name": "Product 6",
+          "quantity": 1,
+          "unit_price": 29.99
+        }
+      ],
+      "total_amount": 207.91
+    },
+    {
+      "request_number": "ORD005",
+      "supplier": "Supplier B",
+      "request_date": "2023-07-17",
+      "product": [
+        {
+          "product_id": "P3",
+          "product_name": "Product 3",
+          "quantity": 10,
+          "unit_price": 19.99
+        },
+        {
+          "product_id": "P5",
+          "product_name": "Product 5",
+          "quantity": 5,
+          "unit_price": 8.99
+        },
+        {
+          "product_id": "P7",
+          "product_name": "Product 7",
+          "quantity": 2,
+          "unit_price": 39.99
+        }
+      ],
+      "total_amount": 388.83
+    }
+  ]
+}

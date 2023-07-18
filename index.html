@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSHOP</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="block">
+            <div class="banner">
+                <div class="banner__content">
+                    <div class="banner__content__left">
+                        <div class="header">
+                            <div class="container__index">
+                                <div class="header__content">
+                                    <div class="header__logo">
+                                        <a href="#"><img src="assets/imgs/logo/CSHAP.png" alt="cShap"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="container__index">
+                                <div class="main__content">
+                                    <div class="cshap">
+                                        <h2 class="name">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.</h2>
+                                        <p class="description">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.
+                                            Explicabo animi vel totam cum facere, similique sit reprehenderit
+                                            exercitationem cumque non, autem dignissimos repellendus delectus ut
+                                            quasi
+                                            enim sint! Tempore, ea!Lorem
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__index">
+                        <div class="banner__content__right">
+                            <div class="login">
+                                <div class="circle__max">
+                                    <div class="circle__avg">
+                                        <div class="circle__min">
+                                            <div class="button">
+                                                <button value="submit" id="connexion">Connexion</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="connexion__modal">
+                    <div class="loader">
+                        <!-- <img src="./assets/imgs/logo/loader.gif" alt=""> -->
+                    </div>
+                    <div class="connexion__modale__form">
+                        <h1>Se connecter</h1>
+                        <p>Connectez vous à votre compte.</p>
+                        <div class="connexion__modale__form__user">
+                            <label for="text">Nom d'utilisateur</label>
+                            <div class="connexion__modale__form__user__input">
+                                <span class="mdi mdi-account"></span>
+                                <input type="text" id="username" placeholder="$hamMelp978">
+                            </div>
+                            <p class="error_user"></p>
+                        </div>
+                        <div class="connexion__modale__form__pwd">
+                            <div class="connexion__modale__form__pwd__txt">
+                                <label for="pwd">Mot de passe</label>
+                                <a href="#">Mot de passe oublié ?</a>
+                            </div>
+                            <div class="connexion__modale__form__pwd__input">
+                                <span class="mdi mdi-lock"></span>
+                                <input type="password" id="password" placeholder="Password">
+                                <span class="mdi mdi-eye-off"></span>
+                                <span class="mdi mdi-eye"></span>
+                            </div>
+                            <p class="error_pwd"></p>
+                        </div>
+                        <input type="submit" id="connexion" value="Connexion">
+                    </div>
+                    <div class="connexion__modal__croix__fermer">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                    </div>
+                </div>
+                <div class="forgot__password">
+                    <div class="forgot__password__modal">
+                        <div class="logo__password">
+                            <span class="mdi mdi-lock"></span>
+                        </div>
+                        <div class="really">
+                            <p>Mot de passe oublié ?</p>
+                            <p>Veuillez entrer votre e-mail.</p>
+                        </div>
+                        <div class="insert">
+                            <span class="mdi mdi-gmail"></span>
+                            <input type="email" id="email_value" placeholder="name@exemple.com">
+                        </div>
+                        <p class="error_email"></p>
+                        <div class="submit">
+                            <button type="submit" id="annuler">Annuler</button>
+                            <button type="submit" id="send">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- <script>
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "vodinonarus@gmail.com",
+            Password: "42CCC8466E24E25CAA08FD2ACAD5191B85DF",
+            To: 't00811786@gmail.com',
+            From: "you@isp.com",
+            Subject: "Réinitialisation du mot de passe",
+            Body: "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+    </script> -->
+    <script type='module' src="assets/js/connexion.js"></script>
+    <script type='module' src="assets/js/dashbord.js"></script>
+    <script type='module' src="assets/js/stocks-sales.js"></script>
+    <script type='module' src="assets/js/user.js"></script>
+    <script type='module' src="assets/js/base.js"></script>
+    <script type='module' src="assets/js/mymodules.js"></script>
+</body>
+
+</html>

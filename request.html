@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <span class="overlay"></span>
+    <div class="wrapper">
+        <div class="content">
+            <div class="content__left">
+                <aside class="sidebar">
+                    <div class="sidebar__top">
+                        <div class="sidebar__top__logo">
+                            <div class="sidebar__logo">
+                                <a href=""><img src="" alt="">Cshop</a>
+                            </div>
+                        </div>
+                        <div class="sidebar__top__menu">
+                            <ul class="sidebar__menu__list">
+                                <li class="sidebar__list__item active">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo active ">
+                                            <span class="mdi mdi-view-grid-outline"></span>
+                                        </div>
+                                        <p class="menu__name">Dashbord</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item ">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-tag"></span>
+                                        </div>
+                                        <p class="menu__name">Stock</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Caisse</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-account-group"></span>
+                                        </div>
+                                        <p class="menu__name">Gestion d'utilisateur</p>
+                                    </a>
+                                </li>
+                                <li class="sidebar__list__item">
+                                    <a href="#">
+                                        <div class="sidebar__menu__logo">
+                                            <span class="mdi mdi-golf-cart"></span>
+                                        </div>
+                                        <p class="menu__name">Requête</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar__bottom">
+                        <div class="sidebar__day__date">
+                            <p class="date">15 juillet 2023</p>
+                            <p class="hour">23:00:00</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="content__right">
+                <header>
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="navbar__left">
+                                <span></span>
+                            </div>
+                            <div class="navbar__right">
+                                <div class="navbar__right__notification__icone">
+                                    <span class="mdi mdi-bell"></span>
+                                </div>
+                                <span class="navbar__right__seperator"></span>
+                                <div class="user">
+                                    <a href="#">
+                                        <img src="assets/imgs/users/olivier.jpg" alt="">
+                                        <p>DOSSOU Zénaîde</p>
+                                    </a>
+                                    <div class="deconnexion">
+                                        <div class="deconnexion__modal">
+                                            <span class="mdi mdi-logout"></span>
+                                            <p>Déconnexion</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="container">
+
+                        <!-- FORMULAIRE COMMANDE FOURNISSEUR -->
+
+                        <session class="main__modal">
+                            <div class="main__modal__content">
+                                <span class="closeBtn">&times;</span>
+                                <div class="main__modal__form">
+                                    <div class="main__modal__form__title">Requete</div>
+                                    <div class="main__modal__form__content">
+                                        <div class="main__modal__form__left">
+                                            <form action="">
+                                                <div class="input_box">
+                                                    <span class="name_request">Fournisseur</span>
+                                                    <input type="text" id="name_supplier">
+                                                </div>
+                                                <div class="input_box">
+                                                    <span class="name_request">Délai de livraison </span> 
+                                                    <input type="date" id="delivery_time_product">
+                                                </div>
+                                                <div class="input_box">
+                                                    <span class="name_request">Référence</span>
+                                                    <input type="text" id="reference_product">
+                                                </div>
+                                                <div class="input_box">
+                                                    <span class="name_request">Désignations</span>
+                                                    <input type="text" id="reference_product">
+                                                </div>
+                                                <div class="input_box">
+                                                    <span class="name_request">Prix Unitaire</span>
+                                                    <input type="number" id="price_product">
+                                                </div>
+                                                <div class="input_box">
+                                                    <span class="name_request">Quantité</span>
+                                                    <input type="number" id="quantity_request">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="main__modal__form__right">
+                                            <div class="sommary">
+                                                <div class="sommary__title">
+                                                    Sommaire
+                                                </div>
+                                                <div class="sommary__account_total">
+                                                    <p>Total HT : <span class="account_calculation"> 100 000 FCFA</span> </p>
+                                                    <p>Taxe : <span class="account_calculation"> 18%</span></p>
+                                                    <p>Total TTC : <span class="account_calculation">118 000 FCFA</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="request_approuve">
+                                                <a href="#" id="cancel_request">Annuler</a>
+                                                <a href="#" id="validate_request">Valider</a>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </session>
+
+                        <!-- Titre de la page -->
+                        <session class="title">
+                            <div class="title__content">
+                                <div class="title__content__users">
+                                    <h1>Requetes de Nouveau Stock 
+                                        <span>
+                                            <a href="#" class=" btn addrequest" id="request__add">
+                                                Ajouter une requete
+                                            </a>
+                                        </span>
+                                    </h1>
+                                </div>
+                                <div class="title__content__search">
+                                    <div class="title__content__search__category">
+                                        <h1 class="title__content__search__category__all">Tous
+                                            <span>()</span>
+                                        </h1>
+                                        <p class="title__content__search__category__result">En cours
+                                            <span>()</span>
+                                        </p>
+                                    </div>
+                                    <div class="title__content__search__input">
+                                        <input type="text">
+                                        <div class="title__content__search__input__button">
+                                            <a href="#" class="btn">Rechercher de Requetes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title__content__search__action">
+                                    <div class="title__content__search__action__select">
+                                        <select name="action" id="">
+                                            <option value="Changer de rôle pour un utilisateur">Changer le status de requete
+                                            </option>
+                                            <option value="Administrateur">En cours</option>
+                                            <option value="Superviseur">Livrer</option>
+                                            <option value="Caissier">En retard</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="title__content__search__action__change btn">Changement</a>
+                                </div>
+                            </div>
+                        </session>
+
+                        <!-- TABLE GENERAL STYLE -->
+                        <div class="content__table">
+                            <table class="table">
+                                <thead>
+                                    
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox" diseabled>
+                                        </th>
+                                        <th>N0/Serie</th>
+                                        <th>Référence</th>
+                                        <th>Désignations</th>
+                                        <th>Prix Unitaire</th>
+                                        <th>Quantité</th>
+                                        <th>Total TTC</th>
+                                        <th>Dates livraison</th>
+                                        <th>Status</th>
+                                        <th colspan="3">Action</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" diseabled>
+                                        </td>
+                                        <td>1</td>
+                                        <td>AC856624</td>
+                                        <td>Chaussure Louis Vuiton</td>
+                                        <td>15000 fcfa</td>
+                                        <td>2</td>
+                                        <td>30000 fcfa</td>
+                                        <td>5/8/2023</td>
+                                        <td>                                            
+                                            <select name="" id="">
+                                                <option value="">En cours</option>
+                                                <option value="">Livré</option>
+                                            </select>
+                                        </td>
+                                        <td class="action" colspan="3">
+                                            
+                                            <button class="btn--edit"><span class="mdi mdi-lead-pencil"></span></button>
+                                            <button class="btn--delete"><span class="mdi mdi-delete"></span></button>
+                                            <button href="#" class="btn--see-mores">Voir &plus;</button>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" diseabled>
+                                        </td>
+                                        <td>1</td>
+                                        <td>AC856624</td>
+                                        <td>Chaussure Louis Vuiton</td>
+                                        <td>15000 fcfa</td>
+                                        <td>2</td>
+                                        <td>30000 fcfa</td>
+                                        <td>5/8/2023</td>
+                                        <td>                                            
+                                            <select name="" id="">
+                                                <option value="">En cours</option>
+                                                <option value="">Livré</option>
+                                            </select>
+                                        </td>
+                                        <td class="action" colspan="3">
+                                            
+                                            <button class="btn--edit"><span class="mdi mdi-lead-pencil"></span></button>
+                                            <button class="btn--delete"><span class="mdi mdi-delete"></span></button>
+                                            <button href="#" class="btn--see-mores">Voir &plus;</button>
+
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" diseabled>
+                                        </td>
+                                        <td>1</td>
+                                        <td>AC856624</td>
+                                        <td>Chaussure Louis Vuiton</td>
+                                        <td>15000 fcfa</td>
+                                        <td>2</td>
+                                        <td>30000 fcfa</td>
+                                        <td>5/8/2023</td>
+                                        <td>                                            
+                                            <select name="" id="">
+                                                <option value="">En cours</option>
+                                                <option value="">Livré</option>
+                                            </select>
+                                        </td>
+                                        <td class="action" colspan="3">
+                                            
+                                            <button class="btn--edit"><span class="mdi mdi-lead-pencil"></span></button>
+                                            <button class="btn--delete"><span class="mdi mdi-delete"></span></button>
+                                            <button href="#" class="btn--see-mores">Voir &plus;</button>
+
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" diseabled>
+                                        </td>
+                                        <td>1</td>
+                                        <td>AC856624</td>
+                                        <td>Chaussure Louis Vuiton</td>
+                                        <td>15000 fcfa</td>
+                                        <td>2</td>
+                                        <td>30000 fcfa</td>
+                                        <td>5/8/2023</td>
+                                        <td>                                            
+                                            <select name="" id="">
+                                                <option value="">En cours</option>
+                                                <option value="">Livré</option>
+                                            </select>
+                                        </td>
+                                        <td class="action" colspan="3">
+                                            
+                                            <button class="btn--edit"><span class="mdi mdi-lead-pencil"></span></button>
+                                            <button class="btn--delete"><span class="mdi mdi-delete"></span></button>
+                                            <button href="#" class="btn--see-mores">Voir &plus;</button>
+
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" diseabled>
+                                        </td>
+                                        <td>1</td>
+                                        <td>AC856624</td>
+                                        <td>Chaussure Louis Vuiton</td>
+                                        <td>15000 fcfa</td>
+                                        <td>2</td>
+                                        <td>30000 fcfa</td>
+                                        <td>5/8/2023</td>
+                                        <td>                                            
+                                            <select name="" id="">
+                                                <option value="">En cours</option>
+                                                <option value="">Livré</option>
+                                            </select>
+                                        </td>
+                                        <td class="action" colspan="3">
+                                            
+                                            <button class="btn--edit"><span class="mdi mdi-lead-pencil"></span></button>
+                                            <button class="btn--delete"><span class="mdi mdi-delete"></span></button>
+                                            <button href="#" class="btn--see-mores">Voir &plus;</button>
+
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table> 
+                        </div>
+
+                    </div>
+                </main>
+                <footer>
+                    <div class="container">
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type = 'module' src="assets/js/connexion.js"></script>
+    <script type = 'module' src="assets/js/dashbord.js"></script>
+    <script type = 'module' src="assets/js/stocks-sales.js"></script>
+    <script type = 'module' src="assets/js/user.js"></script>
+    <script type = 'module' src="assets/js/base.js"></script>
+    <script type = 'module' src="assets/js/mymodules.js" ></script>
+    </body>
+
+</html>
