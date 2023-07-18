@@ -155,7 +155,7 @@ async function connection() {
     let users = myModules.getDatas('users');
     users.then(datas => {
         let tabUsers = datas
-        const usernameFilter = tabUsers.filter(post => post.username === `${username}` && post.password === `${password}`)
+        const usernameFilter = tabUsers.filter(post => post.userName === `${username}` && post.password === `${password}`)
         let timeoutId = 3000
         setTimeout(()=>{
             let errorValidity = document.querySelector('.error_pwd')
