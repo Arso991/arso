@@ -116,19 +116,6 @@
       "privilege": 3,
       "dateCreat": "05/01/2023",
       "status": "active"
-    },
-    {
-      "id": 10,
-      "firstName": "olivier",
-      "lastName": "koubolou",
-      "userName": "ozondo",
-      "email": "oliverzondo90@gmail.com",
-      "password": "1256",
-      "picture": "",
-      "role": "admin",
-      "privilege": 3,
-      "dateCreat": "25/10/2022",
-      "status": "active"
     }
   ],
   "products": [

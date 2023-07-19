@@ -112,7 +112,13 @@ button:hover::before{
     background-color: var(--color-dark);
     width : 100
 }
-
+.page__title {
+    border-bottom: 2px solid var(--color-seperator-line); 
+}
+.page__title h1{
+  font-size: 25px;
+  font-weight: bold;
+}
 /*==============> || table style <===============*/
 .content__table {
     margin-top: 60px;
@@ -123,17 +129,24 @@ table.table {
     border-collapse: collapse;
     text-align: center;
 }
+table.table thead tr th{
+    --color-gray : white;
+   /*  border: solid 1px var(--color-gray);
+    padding: 10px;
+    align-items: center; */
+    background-color:var(--color-dark);
+    color: var(--color-gray);
+}
 table.table tr th,
 td {
     --color-gray : #d7d7d886;
     border: solid 1px var(--color-gray);
     padding: 10px;
     align-items: center;
+    background-color:white;
 }
-table tr:nth-child(even) td,
-thead th {
-    background-color:  var(--color-dark);
-    color : var(--color-white);
+table tr:nth-child(even) td{
+    background-color:  var(--color-gray);
 }
 .table__picture {
     width: 40px;
@@ -499,16 +512,16 @@ main::-webkit-scrollbar-thumb {
     gap: 25px;
 }
 
-.dashbord_title h2{
-    /* padding: 15px 0; */
+/* .dashbord_title h2{
+    /* padding: 15px 0; *
     font-size: 25px;
     font-weight: bold;
-}
-.dashbord__main__content hr{
+} */
+/* .dashbord__main__content hr{
     height: 3px;
     width: 100%;
     background-color: var(--color-seperator-line); 
-}
+} */
  .card__box{
     display: flex;
     width: 237px;
