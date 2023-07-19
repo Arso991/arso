@@ -2,8 +2,8 @@
 //=======
 
 let addRequest = document.querySelector('.addrequest');
-let modal = document.querySelector('.main__modal');
-let closeBtn = document.querySelector('.closeBtn');
+let modal = document.querySelector('.main__modal__request');
+let closeBtn = document.querySelector('.main__modal__request .closeBtn');
 if(addRequest){
     addRequest.addEventListener('click', (e) => {
         e.preventDefault();

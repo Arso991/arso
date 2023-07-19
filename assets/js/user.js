@@ -1,38 +1,30 @@
 //Importing all from mymodules.js as myModule
 
-import * as myModules from './mymodules.js';
+import * as myModules from "./mymodules.js";
 
 // Function to edite the user information
-const editeUser = ()=>{
-    
-}
+const editeUser = () => {};
 
 // Function to delete the user information
-const deleteUser = (id)=>{
-    myModules.deleteDatas('users', id);
-}
+const deleteUser = (id) => {
+  myModules.deleteDatas("users", id);
+};
 
 // Function to see more the user information
-const seeMore = ()=>{
-    
-}
+const seeMore = () => {};
 
 // Function to add the user information
 
-
-
 // Initialisation of the users table content
 const INITTABLE = () => {
-    
-    let users = myModules.getDatas('users');
-    users.then(datas => {
+  let users = myModules.getDatas("users");
+  users.then((datas) => {
     let usersInfo = ``;
-    let contentTable = document.querySelector('.content__table');
-    
-    if(datas){
-    datas.forEach((item, index) => {
-        
-        usersInfo +=`
+    let contentTable = document.querySelector(".content__table");
+
+    if (datas) {
+      datas.forEach((item, index) => {
+        usersInfo += `
                 <tr>
                     <td>
                         <input type="checkbox">
@@ -55,11 +47,10 @@ const INITTABLE = () => {
                         </a>
                     </td>
                 </tr>
-        `
-        
-    });
-    
-    const schema = `
+        `;
+      });
+
+      const schema = `
                 <table class="table">
                     <thead>
                         <tr>
@@ -78,54 +69,90 @@ const INITTABLE = () => {
                     </tbody>
                     <tfoot>
                     </tfoot>
-    `
-    contentTable.innerHTML = schema
-   }
-   
-    //add listener to a element in the table
-    const linkTags = document.querySelectorAll('table a');
-    
-    linkTags.forEach(item => {
-        item.addEventListener('click', (e)=>{
-            let rowTag = e.currentTarget.closest('tr');
-            let dataId=Number(rowTag.querySelector('td.id').innerText);
-            
-            if(dataId && e.currentTarget.classList.contains('edit')){
-                editeUser();
-            }
-            else if(dataId && e.currentTarget.classList.contains('delete')){
-                deleteUser(dataId);
-                console.log(dataId);
-            }
-            else if(dataId && e.currentTarget.classList.contains('seemore')){
-                seeMore();
-            }
-        })
-    })
-   
-});
+    `;
+      contentTable.innerHTML = schema;
+    }
 
+    //add listener to a element in the table
+    const linkTags = document.querySelectorAll("table a");
+
+    linkTags.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        let rowTag = e.currentTarget.closest("tr");
+        let dataId = Number(rowTag.querySelector("td.id").innerText);
+
+        if (dataId && e.currentTarget.classList.contains("edit")) {
+          editeUser();
+        } else if (dataId && e.currentTarget.classList.contains("delete")) {
+          deleteUser(dataId);
+          console.log(dataId);
+        } else if (dataId && e.currentTarget.classList.contains("seemore")) {
+          seeMore();
+        }
+      });
+    });
+  });
 };
 
-window.addEventListener('load' , INITTABLE());
-
+window.addEventListener("load", INITTABLE());
 
 // Function to add the user information
-const addUsers = document.querySelector('.addusers');
-        let modal = document.querySelector('.main__modal');
-        let closeBtn = document.querySelector('.closeBtn');
-    if(addUsers){
-            addUsers.addEventListener('click', (e) => {
-                e.preventDefault();
-                modal.style.display = 'block'
-            })
-        }
+const addUsers = document.querySelector(".addusers");
+let modal = document.querySelector(".main__modal__user");
+let closeBtn = document.querySelector(".closeBtn");
+if (addUsers) {
+  addUsers.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+}
 
-        if(closeBtn){
-            closeBtn.addEventListener('click', () => {
-                modal.style.display = 'none'
-            })
-        }
+if (closeBtn) {
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}
+
+//function to generate automatic password
+
+function generatePassword(length = 8) {
+  const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+  const numbers = "0123456789";
+  const allCharacters = uppercaseLetters + lowercaseLetters + numbers;
+
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * allCharacters.length);
+
+    password += allCharacters[randomIndex];
+  }
+
+  return password;
+}
+
+const password = generatePassword();
+console.log(password);
+
+//function to set privilege
+let privilege;
+function setPrivilege(role) {
+
+  if (role == "Administrateur") {
+    privilege = 3;
+  }
+  if (role == "Superviseur") {
+    privilege = 2;
+  }
+  if(role == 'Caissier'){
+    privilege = 1;
+  }
+  return privilege;
+}
+
+let role = 'Caissier';
+setPrivilege(role);
+console.log(privilege);
 
 /* valideForm = () => {
     let lastName = document.getElementById('name').value;

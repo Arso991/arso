@@ -1330,7 +1330,28 @@ p.error_user,p.error_pwd{
 
 /* mise en forme du modal */
 
-.main__modal{
+.main__modal__request{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    z-index: 50;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    
+    
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    animation: opening .5s linear;
+}
+
+.main__modal__user{
     display: none;
     position: absolute;
     top: 0;
@@ -1485,7 +1506,8 @@ p.error_user,p.error_pwd{
     background-color: rgb(95, 95, 3);
 }
 
-.closeBtn{
+.main__modal__request .closeBtn,
+.main__modal__user .closeBtn{
     position: absolute;
     font-size: 2rem;
     font-weight: 600;
@@ -1494,6 +1516,10 @@ p.error_user,p.error_pwd{
     right: 14rem;
     color: black;
 
+}
+
+.main__modal__user .closeBtn{
+    right: -2rem;
 }
 
 #update{
